@@ -1,0 +1,29 @@
+{
+  "name": "hack-the-pool",
+  "version": "1.0.0",
+  "description": "hack the pool miniapp game that levareges FHE and encrypted ERC20 for a fun guessing game",
+  "scripts": {
+    "dev:nextjs": "cd packages/cofhe-nextjs && npm run dev",
+    "build:nextjs": "cd packages/cofhe-nextjs && npm run build",
+    "start:nextjs": "cd packages/cofhe-nextjs && npm run start",
+    "build:foundry": "cd packages/foundry && forge build",
+    "test:foundry": "cd packages/foundry && forge test",
+    "clean": "rm -rf node_modules && cd packages/cofhe-nextjs && rm -rf node_modules && cd ../foundry && rm -rf node_modules",
+    "install:all": "npm install && cd packages/cofhe-nextjs && npm install && cd ../foundry && npm install"
+  },
+  "keywords": [
+    "cofhe",
+    "fhe",
+    "privacy",
+    "blockchain",
+    "ethereum",
+    "smart-contracts",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
